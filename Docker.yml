@@ -1,0 +1,17 @@
+version: '3.18'
+
+services:
+
+  elasticsearch:
+    image: elasticsearch:8.12.0
+    ports:
+      - 9200:9200
+    environment:
+      - name:eso1
+
+
+
+networks:
+  local:
+    name: local
+    driver: bridge
